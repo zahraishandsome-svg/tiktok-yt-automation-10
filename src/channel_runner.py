@@ -921,7 +921,7 @@ def _pick_most_popular(channel: Dict[str, Any],
     eligible.sort(key=lambda v: (v.get("view_count") or 0), reverse=True)
     video = eligible[0]
     db.record_video_seen(channel_id, video, format_type="short")
-    logger.info("[%s] Slot 2 most-popular pick: %s (%s views) | '%s'",
+    logger.info("[%s] Most-popular pick: %s (%s views) | '%s'",
                 channel_id, video["id"], video.get("view_count"), video.get("title", ""))
     return video
 
