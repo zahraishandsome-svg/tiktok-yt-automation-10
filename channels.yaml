@@ -6,7 +6,7 @@
 channels:
   - id: channel_10
     tiktok_username: "mainlymadeline"
-    youtube_channel_name: "mainlymadeline"
+    youtube_channel_name: "Mainly Madeline"
     # No fixed_title — the TikTok caption is used as the YouTube title.
     google_credentials_file: "credentials/channel_10_client_secret.json"
     oauth_token_file: "tokens/channel_10_token.json"
@@ -27,8 +27,8 @@ channels:
     upload_mode: popular_only
     max_download_candidates: 20
     # Caption dedup: skip any TikTok whose caption already exists on the YouTube
-    # channel (catches manual uploads). Filled in after OAuth — "UU" + channel ID.
-    youtube_uploads_playlist: ""
+    # channel (catches manual uploads). 2 videos were uploaded manually.
+    youtube_uploads_playlist: "UUpMyGFX4HPn1ARIvQYt9eGg"
     # English content, US audience — timed for US evening prime.
     slot_publish_times_utc:
       1: "22:00"   # PUBLIC at 6 PM ET / 3 PM PT — US prime time
