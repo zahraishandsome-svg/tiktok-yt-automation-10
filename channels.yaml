@@ -1,36 +1,11 @@
-# TikTok to YouTube Channel Pairs
+# DECOMMISSIONED 2026-08-21 - ch10 (@mainlymadeline).
 #
-# ch10 — onboarded 2026-07-26. Own repo + own GCP project under
-# notmainlymadeline@gmail.com (standard policy: every channel fully de-correlated).
+# Retired for poor performance at the user's request: 19 subscribers and 2,522
+# views across 22 videos in 27 days (median 20 views per video). Cron jobs
+# deleted, workflows removed, database dropped.
+#
+# This repo is NOT reused - every new channel gets its own fresh repo and GCP
+# project. Full mirror backup kept at
+# C:/Users/Zahid/projects/_archive/tiktok-yt-automation-10.git
 
-channels:
-  - id: channel_10
-    tiktok_username: "mainlymadeline"
-    youtube_channel_name: "Mainly Madeline"
-    # The Google account that owns this YouTube channel (onboarding record).
-    owner_email: "notmainlymadeline@gmail.com"
-    # No fixed_title — the TikTok caption is used as the YouTube title.
-    google_credentials_file: "credentials/channel_10_client_secret.json"
-    oauth_token_file: "tokens/channel_10_token.json"
-    # ONE upload per day — only the slot 1 cron job exists for this channel.
-    videos_per_day: 1
-    description_footer: ""
-    default_tags:
-      - mainlymadeline
-      - viral
-      - trending
-    youtube_category_id: "22"
-    enabled: true
-    max_retry_days: 7
-    shorts_max_seconds: 180
-    # popular_only: every slot takes the most-VIEWED unposted TikTok, mining the
-    # back-catalogue best-first. Once the catalogue is exhausted the only unposted
-    # videos left are the new ones, so it degrades to "latest only" automatically.
-    upload_mode: popular_only
-    max_download_candidates: 20
-    # Caption dedup: skip any TikTok whose caption already exists on the YouTube
-    # channel (catches manual uploads). 2 videos were uploaded manually.
-    youtube_uploads_playlist: "UUpMyGFX4HPn1ARIvQYt9eGg"
-    # English content, US audience — timed for US evening prime.
-    slot_publish_times_utc:
-      1: "22:00"   # PUBLIC at 6 PM ET / 3 PM PT — US prime time
+channels: []
